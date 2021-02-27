@@ -19,7 +19,7 @@ module.exports = {
         if (args[0] < 1)
             return message.channel.send("**Please Supply A Number More Than 1!**");
 
-        message.channel.bulkDelete(args[0] + 1)
+        message.channel.bulkDelete(args[0])
             .then(messages => message.channel.send(`**Succesfully deleted \`${messages.size}/${args[0]}\` messages**`).then(msg => msg.delete({ timeout: 5000 }))).catch(() => null)
     }
 }
