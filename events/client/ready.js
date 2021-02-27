@@ -7,7 +7,7 @@ const venom = require("venom-bot")
 
 module.exports = async bot => {
     console.log(`${bot.user.username} is available now!`)
-    var activities = [ `${bot.guilds.cache.size} servers`, `${bot.users.cache.size} users!` ], i = 0;
+    var activities = [ `demo_build_status1`, `${bot.users.cache.size} users!` ], i = 0;
     setInterval(() => bot.user.setActivity(`${PREFIX}help | ${activities[i++ % activities.length]}`, { type: "WATCHING" }),5000)
     
     const API = new DanBotHosting.Client("danbot-nhcybe", bot);
