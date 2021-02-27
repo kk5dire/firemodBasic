@@ -12,4 +12,4 @@ exports.LAVA_HOST = "0"
 
 exports.LAVA_PASSWORD = "0"
 
-exports.LAVA_PORT = "0"
+exports.LAVA_PORT = 0
