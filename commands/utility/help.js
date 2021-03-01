@@ -38,11 +38,12 @@ message.channel.send(log);
 else if(args[0].toLowerCase() === "mod") {
     var commandArray = "1) Ban \n2) Kick\n3) Whois\n4) Unban\n5) Warn\n6) Mute\n7) Purge\n8) Slowmode \n9) Nick \n10) Roleinfo"
     var commandA2 = "11) Rolememberinfo\n12) Setmodlog\n13) Disablemodlog\n14) Lock (Lock the channel)\n15) Unlock (Unlock the channel)\n16) Lockdown (Fully Lock the whole server. [FOR EMRGENCIES ONLY]) \n17) Hackban\\forceban <id>"
-    
+    var commandA3 = "17) Secks"
     pageN1 = "**\n💠Commands: **\n`\`\`js\n" + commandArray + "\`\`\`";
     pageN2 = "**\n💠Commands: **\n`\`\`js\n" + commandA2 + "\`\`\`";
+    pageN3 = "**\n💠Commands: **\n`\`\`js\n" + commandA3 + "\`\`\`";
     
-    let pages = [pageN1, pageN2]
+    let pages = [pageN1, pageN2, pageN3]
     let page = 1 
 
     var embed = new Discord.MessageEmbed()
